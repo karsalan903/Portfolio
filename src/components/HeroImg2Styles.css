@@ -1,0 +1,63 @@
+.heroImg2 {
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+.mask2 {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+}
+
+.mask2::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.introImg2 {
+    width: 100%;
+    height: 100%;
+    background-position: center top;
+    object-fit: cover;
+}
+
+
+.heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImg2 .heading {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.heroImg2 h1 {
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+.heroImg2 p {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+    .heroImg2 h1 {
+        font-size: 2rem;
+    }
+}

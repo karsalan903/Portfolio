@@ -1,0 +1,89 @@
+.mask {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.introImg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.mask::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+}
+
+.hero .content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.hero .content h1 {
+    font-size: 4rem;
+    padding: 0.6rem 0 1.5rem;
+    color: #fff;
+}
+
+.hero .content p {
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: #fff;
+}
+
+.content .button {
+    margin: 1rem 0.2rem;
+    padding: 12px 32px;
+    background-color: rgb(248, 217, 15);
+    color: #222;
+    border: 1px solid #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none
+}   
+
+.content .buttonLight {
+    margin: 1rem 0.2rem;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 12px 32px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.buttonLight:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 640px) {
+    .hero .content h1 {
+        font-size: 3rem;
+    }
+}
